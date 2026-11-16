@@ -27,6 +27,20 @@ header {
 .main {
     background-color: blue;
     grid-area: main;
+    padding: 1rem;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project {
+    background-color: orange;
+    width: 40%;
+    padding: 10px;
 }
 
 .announcements {
