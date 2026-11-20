@@ -6,7 +6,7 @@ body {
     margin: 0px;
     padding: 0px;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr 4fr 4fr;
     grid-template-areas:
     "sidebar header header header header"
@@ -49,12 +49,35 @@ header {
 
 }
 
-.announcements {
+.section-3 {
     background-color: yellow;
     grid-area: announcements;
+    padding: 1rem;
 }
 
-.trending {
+.announcements-section, .trending-section {
+    background-color: azure;
+    
+}
+
+.section-4 {
     background-color: brown;
     grid-area: trending;
 }
+
+.trending-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.user {
+    width: 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+
+
+
+
