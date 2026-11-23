@@ -5,6 +5,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    max-height: 100vh;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr 4fr 4fr;
@@ -17,33 +18,63 @@ body {
 header {
     background-color: red;
     grid-area: header;
+    padding: 10px;
 }
 
 .top-header {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height:min-content;
+}
+
+header p {
+    width: fit-content;
+    margin: 0px;
+}
+
+input {
+    border-radius: 10%;
+    background-color: rgb(170, 175, 175);
+    width: 60%;
+}
+
+.top-header > img{
+    height:20px;
 }
 
 .bottom-header {
     display: grid;
     grid-template-columns: 1fr 6fr repeat(3, 1fr);
     grid-template-rows: 1fr;
+    align-items: center;
+    height: min-content;
 }
 
-header > button {
+.bottom-header > button {
     padding: 5px;
-    border-radius: 40%;
-    height: min(40px, 1fr)
+    border-radius: 10%;
+    height: min(40px, 1fr);
+    margin: 5px;
 }
 
 .sidebar {
     background-color: green;
     grid-area: sidebar;
+    padding: 10px;
 }
 
 .sidebar > div {
     margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 5px;
+    align-items: center;
 }
+
+
+
 
 .main {
     background-color: blue;
@@ -94,3 +125,10 @@ header > button {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
 }
+
+img {
+    aspect-ratio: 1;
+    height:30px;
+}
+
+
