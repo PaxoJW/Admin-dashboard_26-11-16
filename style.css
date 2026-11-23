@@ -73,9 +73,6 @@ input {
     align-items: center;
 }
 
-
-
-
 .main {
     background-color: blue;
     grid-area: main;
@@ -103,7 +100,7 @@ input {
     padding: 1rem;
 }
 
-.announcements-section, .trending-section {
+.announcements-section {
     background-color: azure;
     
 }
@@ -111,19 +108,24 @@ input {
 .section-4 {
     background-color: brown;
     grid-area: trending;
-}
-
-.trending-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    padding-left: 1rem;
 }
 
 .user {
     width: 1fr;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 40px 60px;
     grid-template-rows: auto;
+    align-items: center;
+    padding: 10px;
+}
+
+.user img {
+    width: min-content;
+}
+
+.user p {
+    margin: 0;
 }
 
 img {
